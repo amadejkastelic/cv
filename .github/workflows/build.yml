@@ -5,6 +5,8 @@ on:
       - main
     paths:
       - '**.typ'
+      - '**.nix'
+      - '.github/workflows/build.yml'
 
 jobs:
   build:
@@ -13,6 +15,9 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
 
       - name: Set up Nix environment
         uses: nicknovitski/nix-develop@v1
