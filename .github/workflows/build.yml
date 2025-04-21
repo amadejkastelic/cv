@@ -1,0 +1,33 @@
+name: Build and Publish Resume
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.typ'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Nix environment
+        uses: nicknovitski/nix-develop@v1
+
+      - name: Check formatting
+        run: typst --check *.typ
+
+      - name: Build PDF
+        run: nix build
+
+      - name: Upload to Releases
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./result/CV_AmadejKastelic.pdf
+          asset_name: CV_AmadejKastelic.pdf
+          tag: latest-resume
+          overwrite: true
