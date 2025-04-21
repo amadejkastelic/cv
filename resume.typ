@@ -64,7 +64,7 @@
 )
 
 #resume-item[
-  - Development and maintenance of a idp system for Slovenian banks and other companies.
+  - Development and maintenance of a idp system for Slovenian banks and other companies - Rekono IdP.
   - The system is used for identity verification and management, ensuring secure access to sensitive information.
   - The system is built using Java and Spring Boot, with a focus on security and scalability.
   - Collaborated with cross-functional teams to gather requirements and implement new features.
