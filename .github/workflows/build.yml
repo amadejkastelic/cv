@@ -23,7 +23,7 @@ jobs:
         uses: nicknovitski/nix-develop@v1
 
       - name: Check formatting
-        run: typst --check *.typ
+        run: typstyle --check *.typ
 
       - name: Build PDF
         run: nix build
