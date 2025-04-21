@@ -34,5 +34,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./result/CV_AmadejKastelic.pdf
           asset_name: CV_AmadejKastelic.pdf
-          tag: latest-resume
+          tag: resume
           overwrite: true
