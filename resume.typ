@@ -31,11 +31,10 @@
 )
 
 #resume-item[
-  - Developed and maintained a high-performance data access platform for Veza.
+  - Developing and maintaining a high-performance data access platform for Veza.
   - The platform is built using Go and Python, with a focus on scalability and reliability.
-  - Designed and implemented a data access layer that allows users to easily access and manage their data.
   - AI and ML are used to provide a seamless experience for users.
-  - Worked with AWS and other cloud technologies to ensure the platform is scalable and reliable.
+  - Working with AWS and other cloud technologies to ensure the platform is scalable and reliable.
 ]
 
 #resume-entry(
