@@ -135,8 +135,11 @@
 
 = Skills
 
-#resume-skill-item(
-  "Skills",
-  (strong("Go"), strong("Python"), strong("AWS"), "Java", "Nix..."),
-)
+#resume-skill-item("Skills", (
+  strong("Go"),
+  strong("Python"),
+  strong("AWS"),
+  "Java",
+  "Nix...",
+))
 #resume-skill-item("Spoken Languages", (strong("English"), "Slovene"))
