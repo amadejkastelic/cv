@@ -2,3 +2,4 @@
 result/
 *.pdf
 fonts/
+.direnv
