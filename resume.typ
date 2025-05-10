@@ -120,7 +120,7 @@
 ]
 
 #resume-entry(
-  title: "24ur API",
+  title: "24ur API Client",
   location: github-link("amadejkastelic/24ur-api"),
   date: "Aug. 2024 - Present",
   description: "Developer",
@@ -133,13 +133,25 @@
   - The tool is built using Python and is designed to be easy to use and extend.
 ]
 
+#resume-entry(
+  title: "Spar.si API Client",
+  location: github-link("amadejkastelic/spar-api"),
+  date: "May. 2025 - Present",
+  description: "Developer",
+)
+
+#resume-item[
+  - Designed and implemented a web scraping tool for extracting data from the Spar.si website.
+  - The tool allows users to easily access and analyze data from the website, providing valuable insights into trends and patterns.
+  - The tool is built using Go and Nix and is designed to be easy to use and extend.
+]
+
 = Skills
 
 #resume-skill-item("Skills", (
   strong("Go"),
   strong("Python"),
   strong("AWS"),
-  "Java",
   "Nix...",
 ))
 #resume-skill-item("Spoken Languages", (strong("English"), "Slovene"))
