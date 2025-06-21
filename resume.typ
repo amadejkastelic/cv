@@ -85,6 +85,17 @@
 = Projects
 
 #resume-entry(
+  title: "nixpkgs",
+  location: [#github-link("NixOS/nixpkgs")],
+  date: "Sep. 2024 - Present",
+  description: "Maintainer",
+)
+
+#resume-item[
+  - Contributing and maintaining packages and modules in nixpkgs
+]
+
+#resume-entry(
   title: "Hyprlux",
   location: [#github-link("amadejkastelic/Hyprlux")],
   date: "Sep. 2024 - Present",
