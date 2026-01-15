@@ -1,5 +1,5 @@
 .vscode
-result/
+result
 *.pdf
 fonts/
 .direnv
