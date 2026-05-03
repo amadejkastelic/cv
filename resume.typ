@@ -1,5 +1,5 @@
 #import "@preview/fontawesome:0.6.0": *
-#import "@preview/modern-cv:0.9.0": *
+#import "@preview/modern-cv:0.10.0": *
 
 #show: resume.with(
   author: (
@@ -25,8 +25,21 @@
 
 #resume-entry(
   title: "Senior Software Engineer",
+  location: "Ljubljana, Slovenia",
+  date: "2026 - Present",
+  description: "ServiceNow",
+)
+
+#resume-item[
+  - Continuing the development of the Veza data access platform following the acquisition by ServiceNow.
+  - Integrating the platform with ServiceNow's ecosystem, extending its capabilities to a broader customer base.
+  - Collaborating with ServiceNow engineering teams to align development practices and infrastructure.
+]
+
+#resume-entry(
+  title: "Senior Software Engineer",
   location: "Remote - San Francisco, CA",
-  date: "2024 - Present",
+  date: "2024 - 2026",
   description: link("https://veza.com", "Veza"),
 )
 
