@@ -25,7 +25,7 @@
 
 #resume-entry(
   title: "Senior Software Engineer",
-  location: "Ljubljana, Slovenia",
+  location: "Remote - Ljubljana, Slovenia",
   date: "2026 - Present",
   description: "ServiceNow",
 )
