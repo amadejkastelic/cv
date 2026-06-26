@@ -42,6 +42,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.WEBSITE_DISPATCH_TOKEN }}
         run: |
-          gh api repos/amadejkastelic/amadejkastelic.github.io/dispatches \
-            -f event_type=cv-updated \
-            -f 'client_payload[sha]='"${{ github.sha }}"
+          gh api repos/amadejkastelic/amadejkastelic.github.io/actions/workflows/update-cv.yml/dispatches \
+            -f ref=main \
+            -f 'inputs[sha]='"${{ github.sha }}"
