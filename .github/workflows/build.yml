@@ -6,6 +6,7 @@ on:
     paths:
       - '**.typ'
       - '**.nix'
+      - 'flake.lock'
       - '.github/workflows/build.yml'
 
 jobs:
