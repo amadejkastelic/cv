@@ -3,3 +3,4 @@ result
 *.pdf
 fonts/
 .direnv
+.pre-commit-config.yaml

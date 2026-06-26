@@ -14,25 +14,22 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install Nix
-        uses: DeterminateSystems/nix-installer-action@main
+        uses: DeterminateSystems/nix-installer-action@v22
 
-      - name: Set up Nix environment
-        uses: nicknovitski/nix-develop@v1
-
-      - name: Check formatting
-        run: typstyle --check *.typ
+      - name: Checks
+        run: nix flake check -L
 
       - name: Build PDF
-        run: nix build
+        run: nix build .#pdf
 
       - name: Upload to Releases
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./result/CV_AmadejKastelic.pdf
+          file: ./result/resume.pdf
           asset_name: CV_AmadejKastelic.pdf
           tag: resume
           overwrite: true
